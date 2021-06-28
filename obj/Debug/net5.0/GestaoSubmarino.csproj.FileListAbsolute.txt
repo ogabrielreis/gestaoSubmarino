@@ -1,0 +1,16 @@
+/home/reis/Documents/GestaoSubmarino/bin/Debug/net5.0/GestaoSubmarino
+/home/reis/Documents/GestaoSubmarino/bin/Debug/net5.0/GestaoSubmarino.deps.json
+/home/reis/Documents/GestaoSubmarino/bin/Debug/net5.0/GestaoSubmarino.runtimeconfig.json
+/home/reis/Documents/GestaoSubmarino/bin/Debug/net5.0/GestaoSubmarino.runtimeconfig.dev.json
+/home/reis/Documents/GestaoSubmarino/bin/Debug/net5.0/GestaoSubmarino.dll
+/home/reis/Documents/GestaoSubmarino/bin/Debug/net5.0/ref/GestaoSubmarino.dll
+/home/reis/Documents/GestaoSubmarino/bin/Debug/net5.0/GestaoSubmarino.pdb
+/home/reis/Documents/GestaoSubmarino/obj/Debug/net5.0/GestaoSubmarino.csproj.AssemblyReference.cache
+/home/reis/Documents/GestaoSubmarino/obj/Debug/net5.0/GestaoSubmarino.GeneratedMSBuildEditorConfig.editorconfig
+/home/reis/Documents/GestaoSubmarino/obj/Debug/net5.0/GestaoSubmarino.AssemblyInfoInputs.cache
+/home/reis/Documents/GestaoSubmarino/obj/Debug/net5.0/GestaoSubmarino.AssemblyInfo.cs
+/home/reis/Documents/GestaoSubmarino/obj/Debug/net5.0/GestaoSubmarino.csproj.CoreCompileInputs.cache
+/home/reis/Documents/GestaoSubmarino/obj/Debug/net5.0/GestaoSubmarino.dll
+/home/reis/Documents/GestaoSubmarino/obj/Debug/net5.0/ref/GestaoSubmarino.dll
+/home/reis/Documents/GestaoSubmarino/obj/Debug/net5.0/GestaoSubmarino.pdb
+/home/reis/Documents/GestaoSubmarino/obj/Debug/net5.0/GestaoSubmarino.genruntimeconfig.cache
