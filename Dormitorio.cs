@@ -1,6 +1,6 @@
 using System;
 
-namespace dorm {
+namespace Dorm {
     class Dormitorio {
         // Variables
         private int IdDormitorio;
