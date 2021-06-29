@@ -1,43 +1,47 @@
 using System;
 
-class Missao {
-    // Variables
-    private int IdMissao;
-    private string LocalMissao;
-    private string TempoMissao;
-    private string DataExpedicao;
+namespace Missao {
 
-    // Get Variables
-    public int getIdMissao() {
-        return IdMissao;
-    }
 
-    public string getLocalMissao() {
-        return LocalMissao;
-    }
+    public class Missao {
+        // Variables
+        private int IdMissao;
+        private string LocalMissao;
+        private string TempoMissao;
+        private string DataExpedicao;
 
-    public string getTempoMissao() {
-        return TempoMissao;
-    }
+        // Get Variables
+        public int getIdMissao() {
+            return IdMissao;
+        }
 
-    public string getDataExpedicao() {
-        return DataExpedicao;
-    }
+        public string getLocalMissao() {
+            return LocalMissao;
+        }
 
-    // Set Variables
-    public static void setIdMissao(int idMissao) {
-        IdMissao = idMissao;
-    }
+        public string getTempoMissao() {
+            return TempoMissao;
+        }
+
+        public string getDataExpedicao() {
+            return DataExpedicao;
+        }
+
+        // Set Variables
+        public static void setIdMissao(int idMissao) {
+            IdMissao = idMissao;
+        }
     
-    public static void setLocalMissao(string localMissao) {
-        LocalMissao = localMissao;
-    }
+        public static void setLocalMissao(string localMissao) {
+            LocalMissao = localMissao;
+        }
 
-    public static void setTempoMissao(string tempoMissao) {
-        TempoMissao = tempoMissao;
-    }
+        public static void setTempoMissao(string tempoMissao) {
+            TempoMissao = tempoMissao;
+        }
 
-    public static void setDataExpedicao(string dataExpedicao) {
-        DataExpedicao = dataExpedicao;
+        public static void setDataExpedicao(string dataExpedicao) {
+            DataExpedicao = dataExpedicao;
+        }
     }
 }
