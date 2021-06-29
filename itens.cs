@@ -1,11 +1,11 @@
 using System;
 
-namespace Item {
+namespace It {
     public class Item {
         // Variables
         private int IdItem;
         private string NomeItem;
-        private string QtdItem;
+        private int QtdItem;
         private int VidaUtilItem;
         private int IdadeItem;
 
@@ -17,7 +17,7 @@ namespace Item {
         public string getNomeItem(){
             return NomeItem;
         }
-        public string getQtdItem(){
+        public int getQtdItem(){
             return QtdItem;
         }
         public int getVidaUtilItem(){
@@ -26,6 +26,25 @@ namespace Item {
         public int getIdadeItem(){
             return IdadeItem;
         }
+
+        public void setIdItem(int idItem) {
+            IdItem = idItem;
+        }
+
+        public void setNomeItem(string nomeItem) {
+            NomeItem = nomeItem;
+        }
+
+        public void setQtdItem(int qtdItem) {
+            QtdItem = qtdItem;
+        }
         
+        public void setVidaUtilItem(int vidaUtilItem) {
+            VidaUtilItem = vidaUtilItem;
+        }
+
+        public void setIdadeItem(int idadeItem) {
+            IdadeItem = idadeItem;
+        }
     }
 }

@@ -4,7 +4,7 @@ using Mis;
 using User;
 using Pat;
 using Dorm;
-using Item;
+using It;
 
 
 
@@ -15,10 +15,13 @@ namespace GestaoSubmarino
         static void Main(string[] args)
         {
             int item, idSubmarino, idMissao, idUsuario, idPatente, idDormitorio,
-            qtdLivreDormitorio, qtdTotalDormitorio, d, m, a;
+            qtdLivreDormitorio, qtdTotalDormitorio, idItem, qtdItem, vidaUtilItem,
+            idadeItem, d, m, a;
+            
             char dado;
+
             string nomeSubmarino, missaoSubmarino, localMissao, tempoMissao, nomeUsuario,
-            emailUsuario, passwordUsuario, nomePatente;
+            emailUsuario, passwordUsuario, nomePatente, nomeItem;
 
             Console.WriteLine("Olá!");
             Console.WriteLine("Gostaria de pesquisar ou salvar os dados? (p ou s)");
@@ -133,6 +136,41 @@ namespace GestaoSubmarino
                     Console.Write("Qual a quantidade livre de dormitórios? ");
                     qtdLivreDormitorio = Convert.ToInt32(Console.ReadLine());
                     dorm.setQtdLivreDormitorio(qtdLivreDormitorio);
+                }
+
+                else if (item == 6) {
+                    Item it = new Item();
+
+                    Console.Write("Qual o id do item? ");
+                    idItem = Convert.ToInt32(Console.ReadLine());
+                    it.setIdItem(idItem);
+
+                    Console.Write("Qual o nome do item? ");
+                    nomeItem = Convert.ToString(Console.ReadLine());
+                    it.setNomeItem(nomeItem);
+
+                    Console.Write("Qual a quantidade deste item? ");
+                    qtdItem = Convert.ToInt32(Console.ReadLine());
+                    it.setQtdItem(qtdItem);
+
+                    Console.Write("Qual a vida útil do item (em anos)? ");
+                    vidaUtilItem = Convert.ToInt32(Console.ReadLine());
+                    it.setVidaUtilItem(vidaUtilItem);
+
+                    Console.Write("Qual a idade do item (em anos)? ");
+                    idadeItem = Convert.ToInt32(Console.ReadLine());
+                    it.setIdadeItem(idadeItem);
+                }
+
+                else if (item == 7) {
+
+                }
+
+                else if (item == 8) {
+
+                }
+                else {
+                    Console.WriteLine("Item não encontrado!");
                 }
             }
         }
