@@ -1,6 +1,6 @@
 using System;
 
-namespace Usuario {
+namespace User {
 
 
     public class Usuario {
@@ -11,32 +11,32 @@ namespace Usuario {
         private string PasswordUsuario;
 
         //Get Variables
-        public int IdUsuario() {
+        public int getIdUsuario() {
             return IdUsuario;
         }
     
-        public string NomeUsuario() {
+        public string getNomeUsuario() {
             return NomeUsuario;
         }
 
-        public string EmailUsuario() {
+        public string getEmailUsuario() {
             return EmailUsuario;
         }
 
         //Set Variables
-        public static void setIdUsuario(int idUsuario) {
+        public void setIdUsuario(int idUsuario) {
             IdUsuario = idUsuario; 
         }
 
-        public static void setNomePatente(string nomeUsuario) {
+        public void setNomePatente(string nomeUsuario) {
             NomeUsuario = nomeUsuario;
         }
 
-        public static void setEmailUsuario(string emailUsuario) {
+        public void setEmailUsuario(string emailUsuario) {
             EmailUsuario = emailUsuario;
         }
 
-        public static void setPasswordUsuario(string passwordUsaruio) {
+        public void setPasswordUsuario(string passwordUsaruio) {
             PasswordUsuario = passwordUsaruio;
         }
     }

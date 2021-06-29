@@ -1,34 +1,36 @@
 using System;
 
-class Dormitorio {
-    // Variables
-    private int IdDormitorio;
-    private int QtdLivreDormitorio;
-    private int QtdTotalDormitorio;
+namespace dorm {
+    class Dormitorio {
+        // Variables
+        private int IdDormitorio;
+        private int QtdLivreDormitorio;
+        private int QtdTotalDormitorio;
 
-    // Get Variables
-    public int getIdDormitorio() {
-        return IdDormitorio;
-    }
+        // Get Variables
+        public int getIdDormitorio() {
+            return IdDormitorio;
+        }
 
-    public int QtdLivreDormitorio() {
-        return QtdLivreDormitorio;
-    }
+        public int getQtdLivreDormitorio() {
+            return QtdLivreDormitorio;
+        }
 
-    public int QtdTotalDormitorio() {
-        return QtdTotalDormitorio;
-    }
+        public int getQtdTotalDormitorio() {
+            return QtdTotalDormitorio;
+        }
 
-    // Set Variables
-    public static void setIdDormitorio(int idDormitorio) {
-        IdDormitorio = setIdDormitorio; 
-    }
+        // Set Variables
+        public void setIdDormitorio(int idDormitorio) {
+            IdDormitorio = idDormitorio; 
+        }
 
-    public static void setQtdLivreDormitorio(int qtdLivreDormitorio) {
-        QtdLivreDormitorio = qtdLivreDormitorio;
-    }
+        public void setQtdLivreDormitorio(int qtdLivreDormitorio) {
+            QtdLivreDormitorio = qtdLivreDormitorio;
+        }
 
-    public static void setQtdTotalDormitorio(int qtdTotalDormitorio) {
-        QtdTotalDormitorio = qtdTotalDormitorio;
+        public void setQtdTotalDormitorio(int qtdTotalDormitorio) {
+            QtdTotalDormitorio = qtdTotalDormitorio;
+        }
     }
 }

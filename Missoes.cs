@@ -1,9 +1,9 @@
 using System;
 
-namespace Missao {
-
+namespace Mis {
 
     public class Missao {
+
         // Variables
         private int IdMissao;
         private string LocalMissao;
@@ -28,20 +28,20 @@ namespace Missao {
         }
 
         // Set Variables
-        public static void setIdMissao(int idMissao) {
+        public void setIdMissao(int idMissao) {
             IdMissao = idMissao;
         }
     
-        public static void setLocalMissao(string localMissao) {
+        public void setLocalMissao(string localMissao) {
             LocalMissao = localMissao;
         }
 
-        public static void setTempoMissao(string tempoMissao) {
+        public void setTempoMissao(string tempoMissao) {
             TempoMissao = tempoMissao;
         }
 
-        public static void setDataExpedicao(string dataExpedicao) {
-            DataExpedicao = dataExpedicao;
+        public void setDataExpedicao(int d, int m, int a) {
+            DataExpedicao = d+"/"+m+"/"+a;
         }
     }
 }

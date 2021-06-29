@@ -1,6 +1,6 @@
 using System;
 
-namespace Submarino {
+namespace Sub {
 
 
     public class Submarino {
@@ -12,7 +12,7 @@ namespace Submarino {
         private int MesMissao;
         private int AnoMissao;
 
-        public string getIdSubmarino() {
+        public int getIdSubmarino() {
             return IdSubmarino;
         }
         public string getNomeSubmarino() {
@@ -26,18 +26,18 @@ namespace Submarino {
             return DataUltimaMissao;
         }
 
-        public static void IdSubmarino(int idSubmarino) {
+        public void setIdSubmarino(int idSubmarino) {
             IdSubmarino = idSubmarino;
         }
-        public static void NomeSubmarino(string nomeSubmarino) {
+        public void setNomeSubmarino(string nomeSubmarino) {
             NomeSubmarino = nomeSubmarino;
         }
 
-        public static void MissaoSubmarino(string missaoAtual) {
+        public void setMissaoSubmarino(string missaoAtual) {
             MissaoSubmarino = missaoAtual;
         }
 
-        public static void DataUltimaMissao(int d, int m, int a) {
+        public void setDataUltimaMissao(int d, int m, int a) {
             DataUltimaMissao = d+"/"+m+"/"+a;
         }
 

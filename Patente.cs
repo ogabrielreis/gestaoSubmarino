@@ -1,13 +1,13 @@
 using System;
 
-namespace Patente {
+namespace Pat {
     public class Patente {
         //Variables;
         private int IdPatente;
         private string NomePatente;
 
         //Get Variables;
-        public string getIdPatente() {
+        public int getIdPatente() {
             return IdPatente;
         }
 
@@ -16,11 +16,11 @@ namespace Patente {
         }
 
         //Set Variables;
-        public static void setIdPatente(int idPatente) {
-            idPatente = idPatente;
+        public void setIdPatente(int idPatente) {
+            IdPatente = idPatente;
         }
 
-        public static void setNomePatente(string nomePatente) {
+        public void setNomePatente(string nomePatente) {
             NomePatente = nomePatente;
         }
     }
