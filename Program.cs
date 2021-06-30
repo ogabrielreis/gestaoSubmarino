@@ -21,7 +21,9 @@ namespace GestaoSubmarino
             idadeItem, idProblema, tempoConserto, idManutencao, tempoEstimadoManutencao,
             pesquisaItem,  d, m, a;
             
-            char dado;
+            char dado, cont;
+
+            bool continuar = false;
 
             string nomeSubmarino, missaoSubmarino, localMissao, tempoMissao, nomeUsuario,
             emailUsuario, passwordUsuario, nomePatente, nomeItem, itemProblema, causaProblema,
@@ -37,6 +39,7 @@ namespace GestaoSubmarino
             Problema prob = new Problema();
             Manutencao manut = new Manutencao();
 
+            do {
             Console.WriteLine("Olá!");
             Console.WriteLine("Gostaria de pesquisar ou salvar os dados? (p ou s)");
             dado = Convert.ToChar(Console.ReadLine());
@@ -221,83 +224,95 @@ namespace GestaoSubmarino
                     Console.WriteLine("Qual o id do submarino deseja pesquisar? ");
                     pesquisaItem = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine(sub.getIdSubmarino());
-                    Console.WriteLine(sub.getNomeSubmarino());      
-                    Console.WriteLine(sub.getMissaoSubmarino());
-                    Console.WriteLine(sub.getDataUltimaMissao());
+                    Console.WriteLine("O id é " + sub.getIdSubmarino());
+                    Console.WriteLine("O nome é " + sub.getNomeSubmarino());      
+                    Console.WriteLine("A missão atual é " + sub.getMissaoSubmarino());
+                    Console.WriteLine("A data da missão é " + sub.getDataUltimaMissao());
                 }
 
                 else if (item == 2) {
                     Console.WriteLine("Qual o id da missão que deseja pesquisar? ");
                     pesquisaItem = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine(mis.getIdMissao());
-                    Console.WriteLine(mis.getLocalMissao());
-                    Console.WriteLine(mis.getTempoMissao());
-                    Console.WriteLine(mis.getDataExpedicao());
+                    Console.WriteLine("O id da missão é " + mis.getIdMissao());
+                    Console.WriteLine("O Local da missão é " + mis.getLocalMissao());
+                    Console.WriteLine("O tempo da missão é " + mis.getTempoMissao());
+                    Console.WriteLine("A data da expedição é " + mis.getDataExpedicao());
                 }
 
                 else if (item == 3) {
                     Console.WriteLine("Qual o id do usuário que deseja pesquisar? ");
                     pesquisaItem = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine(user.getIdUsuario());
-                    Console.WriteLine(user.getNomeUsuario());
-                    Console.WriteLine(user.getEmailUsuario());
+                    Console.WriteLine("O id do usuário é " + user.getIdUsuario());
+                    Console.WriteLine("O nome do usuário é " + user.getNomeUsuario());
+                    Console.WriteLine("O Email do usuário é " + user.getEmailUsuario());
                 }
 
                 else if (item == 4) {
                     Console.WriteLine("Qual o id da patente que deseja pesquisar? ");
                     pesquisaItem = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine(pat.getIdPatente());
-                    Console.WriteLine(pat.getNomePatente());
+                    Console.WriteLine("O id da patente é " + pat.getIdPatente());
+                    Console.WriteLine("O nome da patente é " + pat.getNomePatente());
                 }
 
                 else if (item == 5) {
                     Console.WriteLine("Qual o id do dormitório que deseja pesquisar? ");
                     pesquisaItem = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine(dorm.getIdDormitorio());
-                    Console.WriteLine(dorm.getQtdTotalDormitorio());
-                    Console.WriteLine(dorm.getQtdLivreDormitorio());
+                    Console.WriteLine("O id do dormitório é " + dorm.getIdDormitorio());
+                    Console.WriteLine("A quantidade total de dormitórios é " + dorm.getQtdTotalDormitorio());
+                    Console.WriteLine("A quantidade livre de dormitórios é " + dorm.getQtdLivreDormitorio());
                 }
 
                 else if (item == 6) {
                     Console.WriteLine("Qual o id do item que deseja pesquisar? ");
                     pesquisaItem = Convert.ToInt32(Console.ReadLine());
                     
-                    Console.WriteLine(it.getIdItem());
-                    Console.WriteLine(it.getNomeItem());
-                    Console.WriteLine(it.getQtdItem());
-                    Console.WriteLine(it.getVidaUtilItem());
-                    Console.WriteLine(it.getIdadeItem());
+                    Console.WriteLine("O id do item é " + it.getIdItem());
+                    Console.WriteLine("O nome do item é " + it.getNomeItem());
+                    Console.WriteLine("A quantidade disponível deste item é " + it.getQtdItem());
+                    Console.WriteLine("A vida útil deste item é " + it.getVidaUtilItem());
+                    Console.WriteLine("A idade deste item é " + it.getIdadeItem());
                 }
 
                 else if (item == 7) {
                     Console.WriteLine("Qual o id do problema que deseja pesquisar? ");
                     pesquisaItem = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine(prob.getIdProblema());
-                    Console.WriteLine(prob.getItemProblema());
-                    Console.WriteLine(prob.getTempoConserto());
-                    Console.WriteLine(prob.getCausaProblema());
-                    Console.WriteLine(prob.getEfeitoProblema());
+                    Console.WriteLine("O id do problema é " + prob.getIdProblema());
+                    Console.WriteLine("O item que apresenta problema é " + prob.getItemProblema());
+                    Console.WriteLine("O tempo de conserto é " + prob.getTempoConserto());
+                    Console.WriteLine("A causa do problema é " + prob.getCausaProblema());
+                    Console.WriteLine("O efeito do problema é " + prob.getEfeitoProblema());
                 }
 
                 else if (item == 8) {
                     Console.WriteLine("Qual o id da manutenção que deseja pesquisar? ");
                     pesquisaItem = Convert.ToInt32(Console.ReadLine());
 
-                    Console.WriteLine(manut.getIdManutencao());
-                    Console.WriteLine(manut.getItemManutecao());
-                    Console.WriteLine(manut.getTempoEstimadoManutencao());
+                    Console.WriteLine("O id da manutenção é " + manut.getIdManutencao());
+                    Console.WriteLine("o item em manutenção é " + manut.getItemManutecao());
+                    Console.WriteLine("O tempo estimado da manutenção é de " + manut.getTempoEstimadoManutencao());
                 }
 
                 else {
                     Console.WriteLine("Item não encontrado!");
                 }
             }
+
+            Console.WriteLine("Deseja continuar? (s para sim e n para não) ");
+            cont = Convert.ToChar(Console.ReadLine());
+
+            if (cont == 's') {
+                continuar = true;
+            }
+            else {
+                continuar = false;
+            }
+
+            } while(continuar == true);
         }
     }
 }

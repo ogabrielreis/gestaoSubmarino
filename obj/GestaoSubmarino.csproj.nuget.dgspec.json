@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/reis/Documents/GestaoSubmarino/GestaoSubmarino.csproj": {}
+    "/home/reis/Documents/UCL/gestaoSubmarino/GestaoSubmarino.csproj": {}
   },
   "projects": {
-    "/home/reis/Documents/GestaoSubmarino/GestaoSubmarino.csproj": {
+    "/home/reis/Documents/UCL/gestaoSubmarino/GestaoSubmarino.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/reis/Documents/GestaoSubmarino/GestaoSubmarino.csproj",
+        "projectUniqueName": "/home/reis/Documents/UCL/gestaoSubmarino/GestaoSubmarino.csproj",
         "projectName": "GestaoSubmarino",
-        "projectPath": "/home/reis/Documents/GestaoSubmarino/GestaoSubmarino.csproj",
+        "projectPath": "/home/reis/Documents/UCL/gestaoSubmarino/GestaoSubmarino.csproj",
         "packagesPath": "/home/reis/.nuget/packages/",
-        "outputPath": "/home/reis/Documents/GestaoSubmarino/obj/",
+        "outputPath": "/home/reis/Documents/UCL/gestaoSubmarino/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/reis/.nuget/NuGet/NuGet.Config"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
         }
       }
     }

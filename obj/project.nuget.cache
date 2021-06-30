@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3rzELg2xfSpLMH/t99KfgZDZnR0b7CUCTRZX+pOwfCS5g1y7Skvxh2LL2kwV3P4wxLoZ5cpX4xoVZqc65tne/A==",
+  "dgSpecHash": "I9xrus6dLfVLeDH0j4Hn8307KK/UXq2vU7zgvIMN5Bj6oqk27Rns/WMNxcJvUSC5bu4SKdGHpkeMVmf3aAkrag==",
   "success": true,
-  "projectFilePath": "/home/reis/Documents/GestaoSubmarino/GestaoSubmarino.csproj",
+  "projectFilePath": "/home/reis/Documents/UCL/gestaoSubmarino/GestaoSubmarino.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
